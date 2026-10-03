@@ -8,7 +8,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
 
 .navbar {
     height: 55px;
@@ -17,9 +16,6 @@ body {
     align-items: center;
     padding: 0 20px;
 }
-
-
-/* AMAZON LOGO */
 
 .logo img {
     width: 95px;
@@ -51,9 +47,6 @@ body {
     display: block;
     font-size: 14px;
 }
-
-
-/* SEARCH BAR */
 
 .search-bar {
     display: flex;
@@ -106,10 +99,6 @@ body {
     stroke-linecap: round;
 }
 
-/* FOOTER */
-
-/* Sign in section */
-
 .signin-section {
     text-align: center;
     padding: 25px 0 20px;
@@ -140,9 +129,6 @@ body {
     color: #2162a1;
 }
 
-
-/* Back to top */
-
 .back-to-top {
     height: 50px;
     background-color: #37475a;
@@ -152,9 +138,6 @@ body {
     justify-content: center;
     font-size: 13px;
 }
-
-
-/* Main footer */
 
 .footer {
     background-color: #232f3e;
@@ -179,9 +162,6 @@ body {
     color: #dddddd;
 }
 
-
-/* Bottom section */
-
 .footer-bottom {
     background-color: #232f3e;
     border-top: 1px solid #3a4553;
@@ -202,9 +182,6 @@ body {
     margin: 5px;
 }
 
-
-/* Copyright */
-
 .copyright {
     background-color: #131a22;
     color: white;
@@ -213,13 +190,9 @@ body {
     font-size: 12px;
 }
 
-/* SPACE BEFORE FOOTER */
-
 .back-to-top {
     margin-top: 1000px;
 }
-
-/* LANGUAGE */
 
 .language {
     display: flex;
@@ -270,8 +243,6 @@ body {
 .cart strong {
     font-size: 14px;
 }
-
-/* SIDE MENU */
 
 .side-menu {
     width: 365px;
