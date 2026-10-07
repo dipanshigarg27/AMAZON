@@ -8,18 +8,23 @@ body {
     font-family: Arial, sans-serif;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0dca99c (Updated code)
 .navbar {
-    height: 55px;
+    height: 60px;
     background-color: #131921;
+    color: white;
     display: flex;
     align-items: center;
     padding: 0 20px;
+    gap: 15px;
+    border-bottom: 1px solid #3a4553;   
 }
 
 .logo img {
-    width: 95px;
-    height: auto;
+    width: 105px;
 }
 
 .location {
@@ -27,11 +32,12 @@ body {
     align-items: center;
     gap: 5px;
     color: white;
+    width: 200px;
 }
 
 .location-icon {
-    width: 28px;
-    height: 28px;
+    width: 27px;
+    height: 27px;
     fill: none;
     stroke: white;
     stroke-width: 2;
@@ -51,19 +57,16 @@ body {
 .search-bar {
     display: flex;
     height: 40px;
-    width: 50%;
-    flex: none;
-    margin-left: 10px;
+    flex: 1;
     border-radius: 5px;
     overflow: hidden;
 }
 
 .search-bar select {
-    width: 55px;
+    width: 50px;
     border: none;
-    background: #e6e6e6;
+    background-color: #e6e6e6;
     font-size: 12px;
-    padding: 0 8px;
 }
 
 .search-bar input {
@@ -77,17 +80,16 @@ body {
 
 .search-bar input::placeholder {
     color: #5f6368;
-    opacity: 1;
 }
 
 .search-bar button {
     width: 45px;
     border: none;
     background-color: #febd69;
-    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .search-icon {
@@ -99,6 +101,198 @@ body {
     stroke-linecap: round;
 }
 
+<<<<<<< HEAD
+=======
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.language span:last-child {
+    font-size: 9px;
+}
+
+.account {
+    width: 145px;
+    color: white;
+    white-space: nowrap;
+}
+
+.account small {
+    display: block;
+    font-size: 11px;
+}
+
+.account strong {
+    display: block;
+    font-size: 14px;
+}
+
+.account span {
+    font-size: 9px;
+}
+
+.returns {
+    width: 100px;
+    color: white;
+    white-space: nowrap;
+}
+
+.returns small {
+    display: block;
+    font-size: 11px;
+}
+
+.returns strong {
+    display: block;
+    font-size: 14px;
+}
+
+.cart {
+    width: 85px;
+    display: flex;
+    align-items: center;
+    color: white;
+    white-space: nowrap;
+}
+
+.cart i {
+    font-size: 24px;
+    margin-right: 4px;
+}
+
+.cart strong {
+    font-size: 14px;
+}
+
+.cart-count {
+    color: #ff9900;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.second-navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 22px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.second-navbar div {
+    color: white;
+    cursor: pointer;
+}
+
+.all-btn {
+    font-weight: bold;
+}
+
+.festival {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.side-menu {
+    width: 365px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: -365px;            
+    z-index: 10;
+    transition: left 0.3s;
+}
+
+.side-menu.open {
+    left: 0; 
+}                 
+
+.side-menu-header {
+    height: 50px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.side-menu-header span {
+    font-size: 25px;
+}
+
+.side-menu-header button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.side-menu-content {
+    padding: 20px 30px;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+
+.side-menu-content h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.side-menu-content p {
+    font-size: 14px;
+    padding: 13px 0;
+    cursor: pointer;
+}
+
+.side-menu-content p:hover {
+    background-color: #eaeded;
+}
+
+.side-menu-content p span {
+    float: right;
+    font-size: 25px;
+    color: #777;
+}
+
+.side-menu-content hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px -30px;
+}
+
+
+
+>>>>>>> 0dca99c (Updated code)
 .signin-section {
     text-align: center;
     padding: 25px 0 20px;
@@ -117,7 +311,6 @@ body {
     background-color: #ffd814;
     border: none;
     border-radius: 20px;
-    cursor: pointer;
 }
 
 .signin-section p {
@@ -144,7 +337,7 @@ body {
     color: white;
     display: flex;
     justify-content: space-evenly;
-    padding: 45px 100px;
+    padding: 45px 80px;
 }
 
 .footer div {
@@ -190,6 +383,7 @@ body {
     font-size: 12px;
 }
 
+<<<<<<< HEAD
 .back-to-top {
     margin-top: 1000px;
 }
@@ -261,48 +455,51 @@ body {
     display: flex;
     align-items: center;
     padding: 0 30px;
+=======
+.carousel {
+    position: relative;
+    padding: 12px 12px 40px 12px;
+}
+
+.slider {
+    display: flex;
+>>>>>>> 0dca99c (Updated code)
     gap: 12px;
-    font-size: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
-.side-menu-header span {
-    font-size: 25px;
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
-.side-menu-header button {
-    margin-left: auto;
-    background: none;
-    border: none;
-    color: white;
+.slider img {
+    width: 230px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 80px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-size: 35px;
-    cursor: default;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.side-menu-content {
-    padding: 20px 30px;
-    overflow-y: auto;
-    height: calc(100vh - 65px);
+.left-btn {
+    left: 0;
 }
 
-.side-menu-content h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.side-menu-content p {
-    font-size: 14px;
-    margin: 0;
-    padding: 13px 0;
-}
-
-.side-menu-content p span {
-    float: right;
-    font-size: 25px;
-    color: #777;
-}
-
-.side-menu-content hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 15px -30px;
+.right-btn {
+    right: 0;
 }

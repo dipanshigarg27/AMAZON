@@ -1,15 +1,20 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Amazon</title>
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="{% static 'js/carousel.js' %}" defer></script>
 </head>
 
 <body>
 
-<!-- TOP NAVBAR -->
+<<<<<<< HEAD:amazon_project/templates/index.html
+=======
 <div class="navbar">
+>>>>>>> 0dca99c (Updated code):templates/index.html
 
     <div class="logo">
         <img src="static/images/logo.png" alt="Amazon">
@@ -63,8 +68,6 @@
 
 </div>
 
-
-<!-- SECOND NAVBAR -->
 <div class="second-navbar">
     <div class="all-btn" id="openMenu"><i class="fa-solid fa-bars"></i> All</div>
     <div>Amazon Pay</div>
@@ -82,12 +85,22 @@
     <div>Baby</div>
 </div>
 
+<div class="carousel">
+    <button class="arrow left-btn">‹</button>
 
-<!-- DARK BACKGROUND (appears behind sidebar) -->
+    <div class="slider">
+        {% for image in images %}
+            <img src="{{ image.image_url }}" alt="{{ image.title }}"
+                 style="width:230px; height:370px; object-fit:cover; border-radius:12px; flex-shrink:0;">
+        {% endfor %}
+    </div>
+
+    <button class="arrow right-btn">›</button>
+</div>
+
 <div class="overlay" id="overlay"></div>
 
 
-<!-- SIDEBAR -->
 <div class="side-menu" id="sideMenu">
 
     <div class="side-menu-header">
@@ -131,9 +144,74 @@
 
 </div>
 
+<<<<<<< HEAD:amazon_project/templates/index.html
 
+<div class="navbar">
+
+    <div class="logo">
+        <img src="static/images/logo.png" alt="Amazon">
+    </div>
+
+    <div class="location">
+
+        <svg class="location-icon" viewBox="0 0 24 24">
+            <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"></path>
+            <circle cx="12" cy="9" r="2.5"></circle>
+        </svg>
+
+        <div>
+            <small>Delivering to Sonipat 131021</small>
+            <strong>Update location</strong>
+        </div>
+
+    </div>
+
+    <div class="search-bar">
+
+        <select>
+            <option>All</option>
+        </select>
+
+        <input type="text" placeholder="Search Amazon.in">
+
+        <button>
+            <svg class="search-icon" viewBox="0 0 24 24">
+                <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                <line x1="15.5" y1="15.5" x2="21" y2="21"></line>
+            </svg>
+        </button>
+
+    </div>
+
+    <div class="language">
+        <span>🇮🇳</span>
+        <strong>EN</strong>
+        <span>▼</span>
+    </div>
+
+    <div class="account">
+        <small>Hello, sign in</small>
+        <strong>Account & Lists <span>▼</span></strong>
+    </div>
+
+    <div class="returns">
+        <small>Returns</small>
+        <strong>& Orders</strong>
+    </div>
+
+
+    <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-count">0</span>
+        <strong>Cart</strong>
+    </div>
+
+</div>
+
+
+=======
+>>>>>>> 0dca99c (Updated code):templates/index.html
 {% include "footer.html" %}
-
 
 <script>
     var sideMenu = document.getElementById("sideMenu");
